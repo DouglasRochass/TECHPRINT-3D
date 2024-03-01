@@ -29,5 +29,6 @@ const usuario = sequelize.define('Usuario', {
   timestamps: false,
   freezeTableName: true
 });
+usuario.sync();
 
 module.exports = usuario;

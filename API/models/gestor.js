@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../conexao');
+const sequelize = require('../db/conexao');
 
 const gestor = sequelize.define('Gestor', {
   nome: {

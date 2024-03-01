@@ -1,14 +1,21 @@
 const express = require('express')
 const cors = require('cors')
 const sequelize = require('./db/conexao')
-
-
+const login = require('./routers/login')
+const cadastro = require('./routers/cadastro')
+const usuarios = require('./routers/usuarios')
 
 
 const  app = express()
 
 app.use(cors());
 app.use(express.json())
+
+
+
+app.use('/login', login)
+app.use('/cadastro', cadastro)
+app.use('/', usuarios)
 
 async function verificarConexao() {
     try {
