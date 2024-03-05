@@ -1,7 +1,9 @@
 const express = require('express')
-const cadastrar = require('../controller/cadastro')
+const cadastrarUser = require('../controller/cadastro')
+
 const router = express.Router()
 
-router.post('/', cadastrar.create)
+router.post('/', cadastrarUser.criarUser)
+
 
 module.exports = router

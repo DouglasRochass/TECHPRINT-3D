@@ -16,7 +16,7 @@ exports.findByEmail = async (req, res) => {
     }
   };
   
-  exports.update = async (req, res) => {
+  exports.attuser = async (req, res) => {
     try {
       const idUsuario = req.params.id;
       const { nome, email, senha, cargo, turma} = req.body;
@@ -38,7 +38,7 @@ exports.findByEmail = async (req, res) => {
     }
   };
   
-  exports.delete = async (req, res) => {
+  exports.deleteUser = async (req, res) => {
     try {
       const idUsuario = req.params.id;
   

@@ -21,5 +21,5 @@ const gestor = sequelize.define('Gestor', {
   timestamps: false,
   freezeTableName: true
 });
-
+gestor.sync()
 module.exports = gestor;
